@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A85362E41E34C93600C06E37 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85362E31E34C93600C06E37 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		A85362EC1E351B3300C06E37 /* gong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A85362EB1E351B3300C06E37 /* gong.mp3 */; };
+		F501DC521E322B0100A5771E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DC511E322B0100A5771E /* AppDelegate.swift */; };
+		F501DC541E322B0100A5771E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DC531E322B0100A5771E /* ViewController.swift */; };
+		F501DC571E322B0100A5771E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F501DC551E322B0100A5771E /* Main.storyboard */; };
+		F501DC591E322B0100A5771E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F501DC581E322B0100A5771E /* Assets.xcassets */; };
+		F501DC5C1E322B0100A5771E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F501DC5A1E322B0100A5771E /* LaunchScreen.storyboard */; };
+		F501DC671E322B0100A5771E /* MeditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DC661E322B0100A5771E /* MeditTests.swift */; };
+		F501DC721E322B0100A5771E /* MeditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DC711E322B0100A5771E /* MeditUITests.swift */; };
+		F501DC801E324B7700A5771E /* SeanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DC7F1E324B7700A5771E /* SeanceViewController.swift */; };
+		F501DC821E32565100A5771E /* SeanceProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DC811E32565100A5771E /* SeanceProgressViewController.swift */; };
+		F501DC841E32574300A5771E /* CarnetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DC831E32574300A5771E /* CarnetViewController.swift */; };
+		F501DC861E32577600A5771E /* CarnetAjoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DC851E32577600A5771E /* CarnetAjoutViewController.swift */; };
+		F501DC881E3257AA00A5771E /* SonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DC871E3257AA00A5771E /* SonsViewController.swift */; };
+		F5F4673C1E37AAAB005923A8 /* CarillonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4673B1E37AAAB005923A8 /* CarillonViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F501DC631E322B0100A5771E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F501DC461E322B0100A5771E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F501DC4D1E322B0100A5771E;
+			remoteInfo = Medit;
+		};
+		F501DC6E1E322B0100A5771E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F501DC461E322B0100A5771E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F501DC4D1E322B0100A5771E;
+			remoteInfo = Medit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A85362E31E34C93600C06E37 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A85362EB1E351B3300C06E37 /* gong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gong.mp3; sourceTree = "<group>"; };
+		F501DC4E1E322B0100A5771E /* Medit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F501DC511E322B0100A5771E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F501DC531E322B0100A5771E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F501DC561E322B0100A5771E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F501DC581E322B0100A5771E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F501DC5B1E322B0100A5771E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F501DC5D1E322B0100A5771E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F501DC621E322B0100A5771E /* MeditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F501DC661E322B0100A5771E /* MeditTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditTests.swift; sourceTree = "<group>"; };
+		F501DC681E322B0100A5771E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F501DC6D1E322B0100A5771E /* MeditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F501DC711E322B0100A5771E /* MeditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditUITests.swift; sourceTree = "<group>"; };
+		F501DC731E322B0100A5771E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F501DC7F1E324B7700A5771E /* SeanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeanceViewController.swift; sourceTree = "<group>"; };
+		F501DC811E32565100A5771E /* SeanceProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeanceProgressViewController.swift; sourceTree = "<group>"; };
+		F501DC831E32574300A5771E /* CarnetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarnetViewController.swift; sourceTree = "<group>"; };
+		F501DC851E32577600A5771E /* CarnetAjoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarnetAjoutViewController.swift; sourceTree = "<group>"; };
+		F501DC871E3257AA00A5771E /* SonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonsViewController.swift; sourceTree = "<group>"; };
+		F5F4673B1E37AAAB005923A8 /* CarillonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarillonViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F501DC4B1E322B0100A5771E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A85362E41E34C93600C06E37 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F501DC5F1E322B0100A5771E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F501DC6A1E322B0100A5771E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A85362E21E34C93600C06E37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A85362E31E34C93600C06E37 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A85362EA1E351AF800C06E37 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				A85362EB1E351B3300C06E37 /* gong.mp3 */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		F501DC451E322B0100A5771E = {
+			isa = PBXGroup;
+			children = (
+				F501DC501E322B0100A5771E /* Medit */,
+				F501DC651E322B0100A5771E /* MeditTests */,
+				F501DC701E322B0100A5771E /* MeditUITests */,
+				F501DC4F1E322B0100A5771E /* Products */,
+				A85362E21E34C93600C06E37 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F501DC4F1E322B0100A5771E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F501DC4E1E322B0100A5771E /* Medit.app */,
+				F501DC621E322B0100A5771E /* MeditTests.xctest */,
+				F501DC6D1E322B0100A5771E /* MeditUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F501DC501E322B0100A5771E /* Medit */ = {
+			isa = PBXGroup;
+			children = (
+				A85362EA1E351AF800C06E37 /* Music */,
+				F501DC511E322B0100A5771E /* AppDelegate.swift */,
+				F501DC531E322B0100A5771E /* ViewController.swift */,
+				F501DC551E322B0100A5771E /* Main.storyboard */,
+				F501DC871E3257AA00A5771E /* SonsViewController.swift */,
+				F501DC851E32577600A5771E /* CarnetAjoutViewController.swift */,
+				F501DC831E32574300A5771E /* CarnetViewController.swift */,
+				F501DC811E32565100A5771E /* SeanceProgressViewController.swift */,
+				F501DC7F1E324B7700A5771E /* SeanceViewController.swift */,
+				F5F4673B1E37AAAB005923A8 /* CarillonViewController.swift */,
+				F501DC581E322B0100A5771E /* Assets.xcassets */,
+				F501DC5A1E322B0100A5771E /* LaunchScreen.storyboard */,
+				F501DC5D1E322B0100A5771E /* Info.plist */,
+			);
+			path = Medit;
+			sourceTree = "<group>";
+		};
+		F501DC651E322B0100A5771E /* MeditTests */ = {
+			isa = PBXGroup;
+			children = (
+				F501DC661E322B0100A5771E /* MeditTests.swift */,
+				F501DC681E322B0100A5771E /* Info.plist */,
+			);
+			path = MeditTests;
+			sourceTree = "<group>";
+		};
+		F501DC701E322B0100A5771E /* MeditUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F501DC711E322B0100A5771E /* MeditUITests.swift */,
+				F501DC731E322B0100A5771E /* Info.plist */,
+			);
+			path = MeditUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F501DC4D1E322B0100A5771E /* Medit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F501DC761E322B0100A5771E /* Build configuration list for PBXNativeTarget "Medit" */;
+			buildPhases = (
+				F501DC4A1E322B0100A5771E /* Sources */,
+				F501DC4B1E322B0100A5771E /* Frameworks */,
+				F501DC4C1E322B0100A5771E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Medit;
+			productName = Medit;
+			productReference = F501DC4E1E322B0100A5771E /* Medit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F501DC611E322B0100A5771E /* MeditTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F501DC791E322B0100A5771E /* Build configuration list for PBXNativeTarget "MeditTests" */;
+			buildPhases = (
+				F501DC5E1E322B0100A5771E /* Sources */,
+				F501DC5F1E322B0100A5771E /* Frameworks */,
+				F501DC601E322B0100A5771E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F501DC641E322B0100A5771E /* PBXTargetDependency */,
+			);
+			name = MeditTests;
+			productName = MeditTests;
+			productReference = F501DC621E322B0100A5771E /* MeditTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F501DC6C1E322B0100A5771E /* MeditUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F501DC7C1E322B0100A5771E /* Build configuration list for PBXNativeTarget "MeditUITests" */;
+			buildPhases = (
+				F501DC691E322B0100A5771E /* Sources */,
+				F501DC6A1E322B0100A5771E /* Frameworks */,
+				F501DC6B1E322B0100A5771E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F501DC6F1E322B0100A5771E /* PBXTargetDependency */,
+			);
+			name = MeditUITests;
+			productName = MeditUITests;
+			productReference = F501DC6D1E322B0100A5771E /* MeditUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F501DC461E322B0100A5771E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "ANAIS VIDAL";
+				TargetAttributes = {
+					F501DC4D1E322B0100A5771E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2WH96TFJ2Q;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+					F501DC611E322B0100A5771E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F501DC4D1E322B0100A5771E;
+					};
+					F501DC6C1E322B0100A5771E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F501DC4D1E322B0100A5771E;
+					};
+				};
+			};
+			buildConfigurationList = F501DC491E322B0100A5771E /* Build configuration list for PBXProject "Medit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F501DC451E322B0100A5771E;
+			productRefGroup = F501DC4F1E322B0100A5771E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F501DC4D1E322B0100A5771E /* Medit */,
+				F501DC611E322B0100A5771E /* MeditTests */,
+				F501DC6C1E322B0100A5771E /* MeditUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F501DC4C1E322B0100A5771E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F501DC5C1E322B0100A5771E /* LaunchScreen.storyboard in Resources */,
+				A85362EC1E351B3300C06E37 /* gong.mp3 in Resources */,
+				F501DC591E322B0100A5771E /* Assets.xcassets in Resources */,
+				F501DC571E322B0100A5771E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F501DC601E322B0100A5771E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F501DC6B1E322B0100A5771E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F501DC4A1E322B0100A5771E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F501DC841E32574300A5771E /* CarnetViewController.swift in Sources */,
+				F501DC821E32565100A5771E /* SeanceProgressViewController.swift in Sources */,
+				F5F4673C1E37AAAB005923A8 /* CarillonViewController.swift in Sources */,
+				F501DC801E324B7700A5771E /* SeanceViewController.swift in Sources */,
+				F501DC541E322B0100A5771E /* ViewController.swift in Sources */,
+				F501DC521E322B0100A5771E /* AppDelegate.swift in Sources */,
+				F501DC861E32577600A5771E /* CarnetAjoutViewController.swift in Sources */,
+				F501DC881E3257AA00A5771E /* SonsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F501DC5E1E322B0100A5771E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F501DC671E322B0100A5771E /* MeditTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F501DC691E322B0100A5771E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F501DC721E322B0100A5771E /* MeditUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F501DC641E322B0100A5771E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F501DC4D1E322B0100A5771E /* Medit */;
+			targetProxy = F501DC631E322B0100A5771E /* PBXContainerItemProxy */;
+		};
+		F501DC6F1E322B0100A5771E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F501DC4D1E322B0100A5771E /* Medit */;
+			targetProxy = F501DC6E1E322B0100A5771E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F501DC551E322B0100A5771E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F501DC561E322B0100A5771E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F501DC5A1E322B0100A5771E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F501DC5B1E322B0100A5771E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F501DC741E322B0100A5771E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F501DC751E322B0100A5771E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F501DC771E322B0100A5771E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2WH96TFJ2Q;
+				INFOPLIST_FILE = Medit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anais.Medit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F501DC781E322B0100A5771E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2WH96TFJ2Q;
+				INFOPLIST_FILE = Medit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anais.Medit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F501DC7A1E322B0100A5771E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MeditTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anais.MeditTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medit.app/Medit";
+			};
+			name = Debug;
+		};
+		F501DC7B1E322B0100A5771E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MeditTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anais.MeditTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medit.app/Medit";
+			};
+			name = Release;
+		};
+		F501DC7D1E322B0100A5771E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MeditUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anais.MeditUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Medit;
+			};
+			name = Debug;
+		};
+		F501DC7E1E322B0100A5771E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MeditUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anais.MeditUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Medit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F501DC491E322B0100A5771E /* Build configuration list for PBXProject "Medit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F501DC741E322B0100A5771E /* Debug */,
+				F501DC751E322B0100A5771E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F501DC761E322B0100A5771E /* Build configuration list for PBXNativeTarget "Medit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F501DC771E322B0100A5771E /* Debug */,
+				F501DC781E322B0100A5771E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F501DC791E322B0100A5771E /* Build configuration list for PBXNativeTarget "MeditTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F501DC7A1E322B0100A5771E /* Debug */,
+				F501DC7B1E322B0100A5771E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F501DC7C1E322B0100A5771E /* Build configuration list for PBXNativeTarget "MeditUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F501DC7D1E322B0100A5771E /* Debug */,
+				F501DC7E1E322B0100A5771E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F501DC461E322B0100A5771E /* Project object */;
+}
