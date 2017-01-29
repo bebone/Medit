@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A85362E41E34C93600C06E37 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85362E31E34C93600C06E37 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A85362EC1E351B3300C06E37 /* gong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A85362EB1E351B3300C06E37 /* gong.mp3 */; };
+		A896346C1E3E962900BAEACC /* carillon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A896346B1E3E962800BAEACC /* carillon.mp3 */; };
 		F501DC521E322B0100A5771E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DC511E322B0100A5771E /* AppDelegate.swift */; };
 		F501DC541E322B0100A5771E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DC531E322B0100A5771E /* ViewController.swift */; };
 		F501DC571E322B0100A5771E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F501DC551E322B0100A5771E /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		A85362E31E34C93600C06E37 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A85362EB1E351B3300C06E37 /* gong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gong.mp3; sourceTree = "<group>"; };
+		A896346B1E3E962800BAEACC /* carillon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = carillon.mp3; sourceTree = "<group>"; };
 		F501DC4E1E322B0100A5771E /* Medit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F501DC511E322B0100A5771E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F501DC531E322B0100A5771E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		A85362EA1E351AF800C06E37 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				A896346B1E3E962800BAEACC /* carillon.mp3 */,
 				A85362EB1E351B3300C06E37 /* gong.mp3 */,
 			);
 			name = Music;
@@ -282,6 +285,7 @@
 				F501DC5C1E322B0100A5771E /* LaunchScreen.storyboard in Resources */,
 				A85362EC1E351B3300C06E37 /* gong.mp3 in Resources */,
 				F501DC591E322B0100A5771E /* Assets.xcassets in Resources */,
+				A896346C1E3E962900BAEACC /* carillon.mp3 in Resources */,
 				F501DC571E322B0100A5771E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

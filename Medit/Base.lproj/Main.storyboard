@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="71" id="mql-b5-RGn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Mon Carnet"/>
+                                <state key="normal" title="Mon Journal de Bord"/>
                                 <connections>
                                     <segue destination="War-7R-UCq" kind="show" id="N3P-bS-4tF"/>
                                 </connections>
@@ -135,15 +135,6 @@
                     <view key="view" contentMode="scaleToFill" id="SNN-qL-3hR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carillon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAH-NH-osJ">
-                                <rect key="frame" x="166" y="113" width="58" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -164,33 +155,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pg-fM-Tyh">
-                                <rect key="frame" x="0.0" y="175" width="375" height="67"/>
+                                <rect key="frame" x="0.0" y="300" width="375" height="67"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="hPi-bg-lDh"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Carillon"/>
                                 <connections>
                                     <segue destination="n1b-Qr-gSA" kind="show" id="NGK-XH-Txh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfe-oZ-cUC">
-                                <rect key="frame" x="0.0" y="273" width="375" height="67"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Gong"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gfe-oZ-cUC" firstAttribute="top" secondItem="8pg-fM-Tyh" secondAttribute="bottom" constant="31" id="Cw4-tL-DgC"/>
-                            <constraint firstItem="gfe-oZ-cUC" firstAttribute="trailing" secondItem="8pg-fM-Tyh" secondAttribute="trailing" id="MLe-ni-xxA"/>
-                            <constraint firstItem="gfe-oZ-cUC" firstAttribute="leading" secondItem="8pg-fM-Tyh" secondAttribute="leading" id="MfO-hJ-INc"/>
-                            <constraint firstItem="8pg-fM-Tyh" firstAttribute="leading" secondItem="qAp-y0-xV0" secondAttribute="leading" id="Ob9-vV-s9y"/>
-                            <constraint firstItem="GRd-4O-KJe" firstAttribute="top" secondItem="gfe-oZ-cUC" secondAttribute="bottom" constant="327" id="VRe-oJ-5Lg"/>
-                            <constraint firstAttribute="trailing" secondItem="8pg-fM-Tyh" secondAttribute="trailing" id="j0G-0e-mFl"/>
-                            <constraint firstItem="8pg-fM-Tyh" firstAttribute="top" secondItem="5DD-2B-hNN" secondAttribute="bottom" constant="111" id="ucw-0c-g32"/>
+                            <constraint firstItem="8pg-fM-Tyh" firstAttribute="leading" secondItem="qAp-y0-xV0" secondAttribute="leading" id="1cu-r0-1gv"/>
+                            <constraint firstItem="8pg-fM-Tyh" firstAttribute="top" secondItem="5DD-2B-hNN" secondAttribute="bottom" constant="236" id="AT4-WW-fy7"/>
+                            <constraint firstItem="8pg-fM-Tyh" firstAttribute="centerY" secondItem="qAp-y0-xV0" secondAttribute="centerY" id="Qli-0s-esU"/>
+                            <constraint firstAttribute="trailing" secondItem="8pg-fM-Tyh" secondAttribute="trailing" id="ma4-Uw-doZ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -201,7 +180,7 @@
         <!--Carnet View Controller-->
         <scene sceneID="Yqo-NY-aT3">
             <objects>
-                <viewController id="War-7R-UCq" customClass="CarnetViewController" customModule="Medit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Journal" id="War-7R-UCq" customClass="CarnetViewController" customModule="Medit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hZ5-fw-q3w"/>
                         <viewControllerLayoutGuide type="bottom" id="LZ5-kt-46R"/>
@@ -211,7 +190,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G5K-Fd-grh">
-                                <rect key="frame" x="16" y="136" width="343" height="490"/>
+                                <rect key="frame" x="16" y="136" width="343" height="159"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sMn-cf-jNh">
                                     <rect key="frame" x="0.0" y="72" width="343" height="44"/>
@@ -243,20 +222,36 @@
                                 </constraints>
                                 <state key="normal" title="Ajouter" image="plus"/>
                                 <connections>
-                                    <segue destination="xtU-Vt-vzV" kind="show" id="O0b-Qk-ViW"/>
+                                    <segue destination="xtU-Vt-vzV" kind="show" identifier="GotoAddContenu" id="O0b-Qk-ViW"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Choisissez un contenu dans la liste" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DAi-EO-zHt">
+                                <rect key="frame" x="16" y="312" width="343" height="335"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="335" id="LUa-Ng-e2u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="G5K-Fd-grh" firstAttribute="trailing" secondItem="bxA-QM-KXV" secondAttribute="trailing" id="0qO-o1-KzF"/>
-                            <constraint firstItem="LZ5-kt-46R" firstAttribute="top" secondItem="G5K-Fd-grh" secondAttribute="bottom" constant="41" id="0xJ-cS-CfJ"/>
+                            <constraint firstItem="DAi-EO-zHt" firstAttribute="trailing" secondItem="G5K-Fd-grh" secondAttribute="trailing" id="0xB-ov-UoY"/>
                             <constraint firstItem="bxA-QM-KXV" firstAttribute="trailing" secondItem="i3X-8l-Uov" secondAttribute="trailingMargin" id="Ogh-RW-hkm"/>
-                            <constraint firstItem="G5K-Fd-grh" firstAttribute="top" secondItem="bxA-QM-KXV" secondAttribute="bottom" constant="10" id="Sfz-fm-ZpA"/>
+                            <constraint firstItem="DAi-EO-zHt" firstAttribute="top" secondItem="G5K-Fd-grh" secondAttribute="bottom" constant="17" id="b8U-du-kd9"/>
+                            <constraint firstItem="G5K-Fd-grh" firstAttribute="leading" secondItem="i3X-8l-Uov" secondAttribute="leadingMargin" id="mEJ-C5-nnY"/>
                             <constraint firstItem="bxA-QM-KXV" firstAttribute="top" secondItem="hZ5-fw-q3w" secondAttribute="bottom" constant="8" symbolic="YES" id="qp3-J7-Oza"/>
-                            <constraint firstItem="G5K-Fd-grh" firstAttribute="leading" secondItem="i3X-8l-Uov" secondAttribute="leadingMargin" id="vPH-Yq-SpJ"/>
+                            <constraint firstItem="G5K-Fd-grh" firstAttribute="trailing" secondItem="bxA-QM-KXV" secondAttribute="trailing" id="rOU-xr-Mdh"/>
+                            <constraint firstAttribute="bottom" secondItem="DAi-EO-zHt" secondAttribute="bottom" constant="20" symbolic="YES" id="sbD-LA-fio"/>
+                            <constraint firstItem="DAi-EO-zHt" firstAttribute="leading" secondItem="G5K-Fd-grh" secondAttribute="leading" id="u7Z-D2-rMP"/>
+                            <constraint firstItem="G5K-Fd-grh" firstAttribute="top" secondItem="bxA-QM-KXV" secondAttribute="bottom" constant="10" id="vTT-65-wJb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="carnetTableview" destination="G5K-Fd-grh" id="6zb-Ik-gwg"/>
+                        <outlet property="contenuArticleTextView" destination="DAi-EO-zHt" id="Gma-UT-Ptk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cat-cC-iZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -286,8 +281,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajouter un article" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmN-U0-gMW">
-                                <rect key="frame" x="93" y="86" width="188" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajouter un contenu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmN-U0-gMW">
+                                <rect key="frame" x="82" y="86" width="211" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -517,8 +512,8 @@
                                     <segue destination="xtU-Vt-vzV" kind="show" id="wdp-jT-RIU"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voulez vous écrire vos impression dans votre carnet ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSy-Au-ugL">
-                                <rect key="frame" x="28" y="517" width="304" height="15"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voulez vous écrire vos impression dans votre journal?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSy-Au-ugL">
+                                <rect key="frame" x="29" y="517" width="303" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

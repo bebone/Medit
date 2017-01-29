@@ -13,6 +13,7 @@ class CarillonViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title="Carillon"
         let alertSave = UIAlertController(title: "Secouez :-) !", message: "Basculez l'iPhone ou l'iPad pour lancer la musique !", preferredStyle: UIAlertControllerStyle.alert)
         alertSave.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         
