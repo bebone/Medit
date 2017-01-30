@@ -15,6 +15,7 @@ class SeanceProgressViewController: UIViewController {
     var minutesRecue: String!
     var minutesGongRecue: String!
     
+    
     // Déclarations
     @IBOutlet weak var boutonRetour: UIButton!
     @IBOutlet weak var ecrireCarnetB: UIButton!
@@ -28,31 +29,34 @@ class SeanceProgressViewController: UIViewController {
     var lecteur = AVAudioPlayer()
     var startSeance: Bool!
     var luminositeUser: Float = Float(UIScreen.main.brightness) //réglages initiaux de luminosité
-    
-
+    var calculMinutesGong: Int = 0
+   
     
     /*DEMARRAGE SEANCE*/
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(minutesGongRecue)
         //On surcharge le bouton Back du NavigationController,car nous souhaitons appliquer une action lors du click sur le bouton (l'arrêt du timer)
         self.navigationItem.hidesBackButton = true
         let newBackButton = UIBarButtonItem(title: "Revenir en arrière", style: UIBarButtonItemStyle.plain, target: self, action: #selector(stop))
         self.navigationItem.leftBarButtonItem = newBackButton
         
+        
+        calculMinutesGong = Int(minutesRecue)! - Int(minutesGongRecue)!
         tempsPasse = (Int(minutesRecue)!)*60 //on passe en secondes
+        calculMinutesGong = (Int(tempsPasse))/60 - Int(minutesGongRecue)!
         compteur()
         parler(texte: "Début de séance")
         //On baisse la luminosité pour détendre ses petits yeux :-)
         UIScreen.main.brightness = CGFloat(0.1)
+        
    }
     
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-       
-        
     }
+    
     
     func stop() {
         timer.invalidate() // on retourne sur la view précedente, on stoppe le timer
@@ -64,6 +68,11 @@ class SeanceProgressViewController: UIViewController {
         let heure = Int(temps) / 3600
         let minutes = Int(temps) / 60 % 60
         let secondes = Int(temps) % 60
+        
+        if (calculMinutesGong == minutes) {
+            gong() // DING DONG !
+            calculMinutesGong = (Int(tempsPasse))/60 - Int(minutesGongRecue)!
+        }
         
         return String(format: "%02i:%02i:%02i", heure, minutes, secondes)
     }
@@ -84,6 +93,7 @@ class SeanceProgressViewController: UIViewController {
             timer.invalidate() //Arret du timer à 0
             gong()
             seanceProgress.text = "Séance terminée !"
+            parler(texte: "Séance terminée !")
             UIScreen.main.brightness = CGFloat(luminositeUser) //On remet la luminosité normale
             /*Display des éléments cachés */
             ecrireCarnetB.isHidden = false
@@ -120,6 +130,9 @@ class SeanceProgressViewController: UIViewController {
     }
     
    
+    @IBAction func boutonRetour(_ sender: UIButton) {
+         _ = self.navigationController?.popViewController(animated: true)
+    }
 }
 
 

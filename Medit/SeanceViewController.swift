@@ -22,9 +22,7 @@ class SeanceViewController: UIViewController {
     var timerStart: Bool! = false
     
     
-    /* -> A IMPLEMENTER Pour répéter toutes les X minutes: Tout d'abord il faut faire la soustraction entre minutesSeanceinitiale et MinutesGong que l'on va stocker dans une nouvelle variable valeurCalculGong
-        A partir de ce calcul on va le soustraire par minuteSeanceGong  A chaque fois on teste  si la minute en cours est égale à la valeurCalculGong
-     -> A IMPLEMENTER */
+
     
     
     @IBAction func activeGong(_ sender: UISwitch) {

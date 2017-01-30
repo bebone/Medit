@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SA7-8l-zVP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SA7-8l-zVP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -135,12 +135,23 @@
                     <view key="view" contentMode="scaleToFill" id="SNN-qL-3hR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carillon-pic" translatesAutoresizingMaskIntoConstraints="NO" id="bUl-dE-R1p">
+                                <rect key="frame" x="67" y="208" width="241" height="251"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bUl-dE-R1p" firstAttribute="leading" secondItem="SNN-qL-3hR" secondAttribute="leadingMargin" constant="51" id="3gQ-e0-6G8"/>
+                            <constraint firstItem="bUl-dE-R1p" firstAttribute="centerY" secondItem="SNN-qL-3hR" secondAttribute="centerY" id="WdD-y3-pfP"/>
+                            <constraint firstItem="bUl-dE-R1p" firstAttribute="centerX" secondItem="SNN-qL-3hR" secondAttribute="centerX" id="XtT-aV-o9O"/>
+                            <constraint firstItem="bUl-dE-R1p" firstAttribute="top" secondItem="uI3-iU-Uu0" secondAttribute="bottom" constant="144" id="iat-c5-lOo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4W-7h-piy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="945"/>
+            <point key="canvasLocation" x="756" y="944.97751124437787"/>
         </scene>
         <!--Sons View Controller-->
         <scene sceneID="hwY-6B-H5c">
@@ -490,6 +501,9 @@
                                 <rect key="frame" x="219" y="565" width="114" height="56"/>
                                 <color key="backgroundColor" red="0.87058823529999996" green="1" blue="0.80784313730000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Retour"/>
+                                <connections>
+                                    <action selector="boutonRetour:" destination="itg-Vw-w4m" eventType="touchUpInside" id="IMy-XA-aIt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Séance en cours ...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AA-eO-Arq">
                                 <rect key="frame" x="112" y="108" width="151" height="21"/>
@@ -624,12 +638,13 @@ Méditer permet de trouver la paix intérieure. La méditation permet aussi d'at
         </scene>
     </scenes>
     <resources>
+        <image name="carillon-pic" width="1280" height="847"/>
         <image name="logoMedit" width="1052" height="336"/>
         <image name="meditation" width="1280" height="840"/>
         <image name="plus" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="O0b-Qk-ViW"/>
+        <segue reference="wdp-jT-RIU"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.12941176470588234" green="0.56470588235294117" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

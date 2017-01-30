@@ -137,6 +137,7 @@ class CarnetViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let alertDeleteSuccess = UIAlertController(title: "Supprimé !", message: "Article supprimé !", preferredStyle: UIAlertControllerStyle.alert)
             alertDeleteSuccess.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alertDeleteSuccess, animated: true, completion: nil)
+            contenuArticleTextView.text = "Choisissez un contenu dans la liste"
             viewWillAppear(true)
 
 

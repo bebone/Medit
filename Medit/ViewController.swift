@@ -10,11 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //Vue principale de MEDIT
+    //Vue principale de MEDIT [Medite]
+    let url = URL(string: "http://gitlab.com/bebone/medit")!
 
     @IBAction func About(_ sender: Any) {
-        let alertApropos = UIAlertController(title: "A propos", message: "Appli réalisée par dans le cadre de ma formation \n Le code source est libre et accessible sur GitLab @bebone", preferredStyle: UIAlertControllerStyle.alert)
+        let alertApropos = UIAlertController(title: "A propos", message: "Appli réalisée par dans le cadre de ma formation \n Le code source est libre et accessible sur GitLab", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alertApropos.addAction(UIAlertAction(title: "Jeter un coup d'œil",
+                                          style: UIAlertActionStyle.default, handler: {
+                                            (action:UIAlertAction!) -> Void in
+                                            UIApplication.shared.open(self.url)
+        }))
         alertApropos.addAction(UIAlertAction(title: "Retour", style: UIAlertActionStyle.default, handler: nil))
+
         self.present(alertApropos, animated: true, completion: nil)
     }
     
@@ -22,11 +30,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
             }
-
 
 }
 
