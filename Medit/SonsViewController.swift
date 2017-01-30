@@ -14,7 +14,6 @@ class SonsViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title="Sons"
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,8 +1,7 @@
 # MEDIT
 
-[Medite] Appli iOS avec swift réalisée dans le cadre du Master CIM
->>  Anaïs V. - WTFPLicense   
-Code commenté
+[Medite] Appli iOS Swift 3 réalisée dans le cadre du Master CIM
+>>  Anaïs V. - WTFPLicense - *.Omega3 Version.* Release
 
 ## Les fonctionnalités
 
@@ -13,14 +12,24 @@ Installez vous confortablement dans un endroit calme et si possible sans trop de
 Écrivez vos impressions après la séance (ou en dehors de la séance). Appuyez longtemps sur le titre de votre contenu dans la liste pour le supprimer. Dans cette version, il n’est malheureusement **pas possible** de modifier le contenu enregistré.
 
 * Son
-Faites bouger votre appareil OS X pour lancer le son !
+Faites bouger votre appareil OS X pour lancer le son Carillon!
+
+
+## Composants pour les développeurs
+* Timer
+* AVFoundation : lecture audio et synthétiseur vocal
+* CoreMotion : usage de l'accelerometre
+* Contrôle de la luminosité de l'appareil (UIScreen.main.brightness)
+* Gestuelle LongPress (UILongPressGestureRecognizer)
 
 
 ## Améliorations à faire
 * Amélioration de la gestion des view
 * Amélioration de la gestion du journal de bord
-* etc.
 * Pourquoi pas remplacer le Gong par une vibration? Pas trop forte cependant pour ne pas sortir de sa séance en étant plus stressé qu’avant :-)
+* Pourquoi ne pas lancer un nouveau son détente en soufflant sur le microphone ?
+* Gérer/Maîtriser  sa respiration en soufflant sur le microphone
+* etc.
 
 
 

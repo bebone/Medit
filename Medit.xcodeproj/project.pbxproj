@@ -469,6 +469,7 @@
 		F501DC771E322B0100A5771E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2WH96TFJ2Q;
 				INFOPLIST_FILE = Medit/Info.plist;
@@ -482,6 +483,7 @@
 		F501DC781E322B0100A5771E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2WH96TFJ2Q;
 				INFOPLIST_FILE = Medit/Info.plist;

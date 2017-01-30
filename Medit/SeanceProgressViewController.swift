@@ -69,7 +69,7 @@ class SeanceProgressViewController: UIViewController {
         let minutes = Int(temps) / 60 % 60
         let secondes = Int(temps) % 60
         
-        if (calculMinutesGong == minutes) {
+        if (calculMinutesGong == minutes) { //Répétition du Gogng
             gong() // DING DONG !
             calculMinutesGong = (Int(tempsPasse))/60 - Int(minutesGongRecue)!
         }
@@ -95,7 +95,7 @@ class SeanceProgressViewController: UIViewController {
             seanceProgress.text = "Séance terminée !"
             parler(texte: "Séance terminée !")
             UIScreen.main.brightness = CGFloat(luminositeUser) //On remet la luminosité normale
-            /*Display des éléments cachés */
+            /* DISPLAY des éléments cachés */
             ecrireCarnetB.isHidden = false
             ecrireCarnetL.isHidden = false
             boutonRetour.isHidden = false

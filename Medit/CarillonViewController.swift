@@ -11,7 +11,7 @@ import CoreMotion
 import AVFoundation
 
 class CarillonViewController: UIViewController {
-    //TO DO J'aimerais utiliser le gyroscope pour lancer la musique !!!!
+    // Accéleromètre pour lancer la musique !!!!
     // Avec l'aide de http://theswiftguy.com/index.php/2016/12/19/how-to-use-the-accelerometer-in-xcode-8-swift-3-0/
     
     var motionManager = CMMotionManager() //instancie le Manager
@@ -37,9 +37,9 @@ class CarillonViewController: UIViewController {
         motionManager.startAccelerometerUpdates(to: OperationQueue.current!) { (data, error) in
             if let myData = data // si on réussit à lre les données
             {
-                if myData.acceleration.x > 4
+                //print(myData.acceleration.x) //debug
+                if myData.acceleration.x > 1
                 {
-                    print ("DO SOMETHING SPCIAL")
                     do {
                         self.lecteur = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "carillon", ofType: "mp3")!))
                         self.lecteur.prepareToPlay()
