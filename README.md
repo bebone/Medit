@@ -5,22 +5,24 @@
 
 ## Les fonctionnalités
 
-* Séance méditative
+* Séance méditative   
 Installez vous confortablement dans un endroit calme et si possible sans trop de luminosité. Choisissez le nombre de minutes pour votre séance et appuyez sur le bouton *Démarrer*, c’est Parti ! Fermez les yeux, respirez, recentrez vous sur vous-même, détendez vous ! Un gong vous avertira de la fin de la séance.
 
-* Journal de bord
+* Journal de bord   
 Écrivez vos impressions après la séance (ou en dehors de la séance). Appuyez longtemps sur le titre de votre contenu dans la liste pour le supprimer. Dans cette version, il n’est malheureusement **pas possible** de modifier le contenu enregistré.
 
-* Son
+* Son   
 Faites bouger votre appareil OS X pour lancer le son Carillon!
 
 
-## Composants pour les développeurs
+## Composants utilisés - pour les développeurs
 * Timer
 * AVFoundation : lecture audio et synthétiseur vocal
 * CoreMotion : usage de l'accelerometre
 * Contrôle de la luminosité de l'appareil (UIScreen.main.brightness)
 * Gestuelle LongPress (UILongPressGestureRecognizer)
+* UITableView : population des cellules
+* fileManager : Enregistrement, lecture, suppression de fichiers txt 
 
 
 ## Améliorations à faire
