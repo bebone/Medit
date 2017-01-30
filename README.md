@@ -1,7 +1,7 @@
 # MEDIT
 
 [Medite] Appli iOS Swift 3 réalisée dans le cadre du Master CIM
->>  Anaïs V. - WTFPLicense - *.Omega3 Version.* Release
+>  Anaïs V. - WTFPLicense - *.Omega3 Version.* Release
 
 ## Les fonctionnalités
 
@@ -32,6 +32,18 @@ Faites bouger votre appareil OS X pour lancer le son Carillon!
 * Pourquoi ne pas lancer un nouveau son détente en soufflant sur le microphone ?
 * Gérer/Maîtriser  sa respiration en soufflant sur le microphone
 * etc.
+
+---
+
+## Crédits Musique
+* **Gong** [recorded by Femur](http://soundbible.com/1690-Indian-Bell.html)
+* **Carillon** [recorded by Lisa Redfern](http://soundbible.com/2030-Daydreaming.html)
+
+
+## Crédits Images
+Issues du domaine public
+* **meditation** [ICI](https://pixabay.com/fr/bougie-méditation-main-donjon-335965/)
+* **carillon** [LÀ](https://pixabay.com/fr/carillons-éoliens-pendentif-952844/)
 
 
 
